@@ -1,14 +1,5 @@
 # Offensive Security Home Lab Setup
 
-## Overview
-
-This lab serves as the foundation for hands-on offensive security 
-practice including network reconnaissance, exploitation, and credential 
-harvesting simulations, etc...performed in an air-gapped virtual 
-environment with no impact to production systems or real networks.
-
----
-
 ## Objective
 
 Build an isolated attacker/target lab environment that allows:
