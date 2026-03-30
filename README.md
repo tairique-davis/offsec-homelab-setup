@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build an isolated attacker/target lab environment that allows:
+Build an isolated attacker/target lab environment for future offsensive security projects that allows:
 - Bidirectional communication between attacker and target VMs
 - Outbound internet access from both VMs
 - Host-to-VM access via port forwarding
@@ -336,6 +336,8 @@ in VirtualBox, not just the same network *type*.
 - [x] Port forwarding configured
 
 ---
-<img width="2547" height="1350" alt="image" src="https://github.com/user-attachments/assets/bacfddb8-cd99-4871-a8c0-454e40f29861" />
 **Figure: Both VMs operational and communicating over the NAT Network — bidirectional connectivity confirmed.**
+
+<img width="2547" height="1350" alt="image" src="https://github.com/user-attachments/assets/bacfddb8-cd99-4871-a8c0-454e40f29861" />
+
 
