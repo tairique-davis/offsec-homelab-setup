@@ -7,15 +7,15 @@ Build an isolated attacker/target lab environment that allows:
 - Outbound internet access from both VMs
 - Host-to-VM access via port forwarding
 ---
-## Environment
+## Skills Demonstrated
 
-| Component        | Details                        |
-|------------------|--------------------------------|
-| Hypervisor       | Oracle VirtualBox              |
-| Attacker Machine | Kali Linux                     |
-| Target Machine   | Windows 11                     |
-| Network Type     | VirtualBox NAT Network         |
-| Subnet           | 10.0.2.0/24                    |
+- Hypervisor configuration and VM provisioning (Oracle VirtualBox)
+- Linux and Windows system administration
+- Virtual network design and segmentation (NAT vs. NAT Network)
+- Layer 2 / Layer 3 network troubleshooting (ARP, tcpdump, ping)
+- Network traffic analysis and diagnostic methodology
+- Port forwarding configuration
+- Security lab environment design for offensive security research
 
 ---
 ## Lab Architecture
@@ -337,5 +337,5 @@ in VirtualBox, not just the same network *type*.
 
 ---
 <img width="2547" height="1350" alt="image" src="https://github.com/user-attachments/assets/bacfddb8-cd99-4871-a8c0-454e40f29861" />
-
+**Figure: Both VMs operational and communicating over the NAT Network — bidirectional connectivity confirmed.**
 
