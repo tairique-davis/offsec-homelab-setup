@@ -42,6 +42,7 @@ Build an isolated attacker/target lab environment that allows:
 ---
 
 ## Part 1: Install VirtualBox
+<img src="https://github.com/user-attachments/assets/46881948-d07e-4955-b142-64c1f6fbb3b2" width="50%"/>
 
 1. Go to [virtualbox.org](https://www.virtualbox.org) and download the 
    installer for your host OS (Windows, macOS, or Linux)
@@ -56,6 +57,7 @@ Build an isolated attacker/target lab environment that allows:
 ## Part 2: Set Up the Kali Linux VM
 
 ### Download Kali
+<img src="https://github.com/user-attachments/assets/ebc323d4-266e-40f4-9bd2-51e4ab33550c" width="50%" />
 
 1. Go to [kali.org/get-kali](https://www.kali.org/get-kali/)
 2. Select **Virtual Machines** → download the **VirtualBox** pre-built 
@@ -64,6 +66,10 @@ Build an isolated attacker/target lab environment that allows:
    - Avoid the ISO unless you want to go through a manual install
 
 ### Import into VirtualBox
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/a5202a6b-dfab-40fc-aec8-bb126ab63fb9" width="30%" />
+  <img src="https://github.com/user-attachments/assets/33e59d4b-1544-46ab-9cf9-53fe44680d0c" width="45%" />
+</p>
 
 1. In VirtualBox, go to **File → Import Appliance**
 2. Browse to the downloaded `.ova` file and click **Next**
@@ -84,6 +90,11 @@ Change these after first boot.
 ## Part 3: Set Up the Windows 11 VM
 
 ### Download Windows 11
+<p float="left">
+<img src="https://github.com/user-attachments/assets/ba07f0b9-ca74-4668-b2ce-a611f58ee982" width="40%" />
+<img src="https://github.com/user-attachments/assets/bacdb24a-ba1a-4e21-8ee3-4bb6b631df95" width="35%" />
+</p>
+
 
 Microsoft provides a free evaluation ISO for Windows 11 Enterprise:
 
@@ -167,6 +178,10 @@ misconfiguration that is not immediately obvious from IP configuration
 alone.
 
 ### Create the NAT Network
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/ea1c97d7-9f25-453c-8a9e-db2d46761829" width="30%" />
+  <img src="https://github.com/user-attachments/assets/861dbdbc-cc16-4693-87dd-f18ab6649cad" width="50%" />
+</p>
 
 1. In VirtualBox, navigate to **File → Tools → Network Manager**
 2. Select the **NAT Networks** tab
@@ -178,9 +193,12 @@ alone.
 5. Click **Apply**
 
 ### Attach Both VMs to the NAT Network
+<p float="left">
+<img src="https://github.com/user-attachments/assets/bcf749bf-9141-43ff-88cf-cee32a59a8b5" width="30%"/>
+<img src="https://github.com/user-attachments/assets/bd5c3fa3-e20a-45be-a98b-387758028ac8" width="40%" />
+</p>
 
 For each VM (Kali and Windows 11):
-
 1. **Settings → Network → Adapter 1**
 2. Set **Attached to:** `NAT Network`
 3. Set **Name:** `NatNetwork`
@@ -192,6 +210,7 @@ For each VM (Kali and Windows 11):
 > connectivity between them even if they appear to be on the same subnet.
 
 ### Configure Port Forwarding
+<img src="https://github.com/user-attachments/assets/d4541d6c-0ea5-4a93-a71c-eadb6b09229c" width="30%" />
 
 Port forwarding on a NAT Network is managed at the network level rather 
 than per VM:
@@ -315,3 +334,8 @@ in VirtualBox, not just the same network *type*.
 - [x] Both VMs attached to NAT Network
 - [x] Bidirectional VM communication verified
 - [x] Port forwarding configured
+
+---
+<img width="2547" height="1350" alt="image" src="https://github.com/user-attachments/assets/bacfddb8-cd99-4871-a8c0-454e40f29861" />
+
+
